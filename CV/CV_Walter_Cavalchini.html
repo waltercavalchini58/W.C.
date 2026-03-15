@@ -238,8 +238,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:3rem 0;te
 .reveal.visible{opacity:1;transform:none}
 
 /* ── RESPONSIVE ── */
-@media(max-width:900px){.hero-contact{display:none}.value-grid{grid-template-columns:1fr}.skills-layout{grid-template-columns:1fr}.edu-grid{grid-template-columns:1fr}.certs-grid{grid-template-columns:repeat(2,1fr)}.skills-tags-grid{grid-template-columns:1fr 1fr}.nav-bottom{gap:1.2rem}}
-@media(max-width:600px){.certs-grid{grid-template-columns:1fr}.skills-tags-grid{grid-template-columns:1fr}.nav-bottom{flex-wrap:wrap;padding:.4rem 1rem;gap:.8rem}}
+@media(max-width:900px){.hero-contact{display:none}.value-grid{grid-template-columns:1fr}.skills-layout{grid-template-columns:1fr}.edu-grid{grid-template-columns:1fr}.certs-grid{grid-template-columns:repeat(2,1fr)}.skills-tags-grid{grid-template-columns:1fr 1fr}.nav-bottom{gap:1rem}.nav-links{gap:1rem}}
+@media(max-width:600px){.certs-grid{grid-template-columns:1fr}.skills-tags-grid{grid-template-columns:1fr}.nav-bottom{padding:.4rem .8rem}.nav-links{gap:.6rem;flex-wrap:wrap;justify-content:center}.nav-links a{font-size:.62rem;letter-spacing:.02em;white-space:nowrap}}
 
 ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--faint);border-radius:99px}::-webkit-scrollbar-thumb:hover{background:var(--accent)}
 </style>
@@ -516,7 +516,7 @@ const T = {
     'modal.note':'📍 GBA Norte, Buenos Aires, Argentina<br>Disponible para posiciones presenciales, remotas e híbridas',
     'footer.role':'Data & AI Solutions Architect · Buenos Aires, Argentina',
     'footer.copy':'© 2026 Walter Javier Cavalchini · Todos los derechos reservados',
-    'tag.current':'Posición actual','tag.graduated':'✅ Graduado','tag.inprogress':'En curso',
+    'tag.current':'Posición actual','tag.graduated':'✅ Graduado','tag.inprogress':'Completado 90%',
   },
   en: {
     'nav.about':'Profile','nav.skills':'Skills','nav.exp':'Experience','nav.certs':'Certifications','nav.edu':'Education',
@@ -560,7 +560,7 @@ const T = {
     'modal.note':'📍 Greater Buenos Aires, Argentina<br>Available for on-site, remote or hybrid positions',
     'footer.role':'Data & AI Solutions Architect · Buenos Aires, Argentina',
     'footer.copy':'© 2026 Walter Javier Cavalchini · All rights reserved',
-    'tag.current':'Current position','tag.graduated':'✅ Graduated','tag.inprogress':'In progress',
+    'tag.current':'Current position','tag.graduated':'✅ Graduated','tag.inprogress':'90% completed',
   }
 };
 
@@ -727,12 +727,12 @@ const DATA = {
   edu: {
     es: [
       {icon:'🎓',title:'Analista de Sistemas de Información',inst:'Instituto Superior Charles Babbage · Orientación Programación',status:'graduated'},
-      {icon:'📚',title:'Licenciatura en Administración',inst:'Universidad Nacional de Luján · 90% completado',status:'inprogress'},
+      {icon:'📚',title:'Licenciatura en Administración',inst:'Universidad Nacional de Luján',status:'inprogress'},
       {icon:'📜',title:'Perito Mercantil Contable',inst:'Esc. Media y Técnica Fernando Fader',status:'graduated'},
     ],
     en: [
       {icon:'🎓',title:'Systems Analyst – Information Systems',inst:'Instituto Superior Charles Babbage · Programming track',status:'graduated'},
-      {icon:'📚',title:'Bachelor\'s in Business Administration',inst:'Universidad Nacional de Luján · 90% completed',status:'inprogress'},
+      {icon:'📚',title:'Bachelor\'s in Business Administration',inst:'Universidad Nacional de Luján',status:'inprogress'},
       {icon:'📜',title:'Certified Accounting Clerk (Perito Mercantil)',inst:'Fernando Fader Technical School',status:'graduated'},
     ]
   },
